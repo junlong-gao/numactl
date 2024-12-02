@@ -14,7 +14,7 @@ cc_library(
         "util.c",
     ] + glob(["*.h"]),
     hdrs = ["numa.h"],
-    visibility = ["//visibility:public"],
     includes = ["."],
     linkstatic = True,
+    visibility = ["//visibility:public"],
 )
