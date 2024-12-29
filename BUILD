@@ -13,7 +13,10 @@ cc_library(
         "sysfs.c",
         "util.c",
     ] + glob(["*.h"]),
-    hdrs = ["numa.h"],
+    hdrs = [
+        "numa.h",
+        "numaif.h",
+    ],
     linkstatic = True,
     visibility = ["//visibility:public"],
 )
